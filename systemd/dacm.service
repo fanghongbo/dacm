@@ -1,0 +1,13 @@
+[Unit]
+Description=DACM Server Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/local/dacm/dacm -c /usr/local/dacm/config/app.json
+
+[Install]
+WantedBy=multi-user.target

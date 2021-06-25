@@ -1,0 +1,36 @@
+{
+  "cluster_type": "nacos",
+  "cluster_nodes": [
+    {
+      "ip": "127.0.0.1",
+      "port": 8848
+    }
+  ],
+  "log_level": "debug",
+  "cache_dir": "/tmp/dacm/cache",
+  "log_dir": "/tmp/dacm/log",
+  "rotate_time": "1h",
+  "max_age": 3,
+  "namespaces": [
+    {
+      "id": "e525eafa-f7d7-4029-83d9-008937f9d468",
+      "name": "sunline-dev",
+      "username": "",
+      "password": "",
+      "configs": [
+        {
+          "data_id": "sunline-user-core",
+          "group": "DEFAULT_GROUP",
+          "sync_file": "/tmp/1.config",
+          "execute": "cd /tmp/; cat 1.config",
+          "execute_delay": 10,
+          "execute_timeout": 10000,
+          "not_load_cache_at_start": true,
+          "timeout": 5000
+        }
+      ]
+    }
+  ],
+  "max_cpu_rate": 1,
+  "max_mem_rate": 1
+}

@@ -1,0 +1,7 @@
+.idea/
+test/
+logs/
+log/
+config/cfg.json
+dev
+.DS_Store
